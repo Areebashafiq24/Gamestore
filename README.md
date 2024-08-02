@@ -27,3 +27,10 @@ To get started with the GameStore API, follow these steps:
    ```sh
    git clone https://github.com/Areebashafiq24/GameStore.git
    cd GameStore/GameStore.Api
+
+2. **Install Dependencies**
+   Ensure you have .NET SDK installed. Install the necessary tools with:
+
+   ```sh
+
+   dotnet tool install --global dotnet-ef
