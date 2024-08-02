@@ -83,10 +83,11 @@ Response: The created game object with a 201 Created status, including the locat
    Request Body:
       
    ```sh
-  "name": "Updated Game Name",
-  "genre": "Updated Game Genre",
-  "price": 9.99,
-  "releaseDate": "YYYY-MM-DD"
+   "name": "Updated Game Name",
+   "genre": "Updated Game Genre",
+   "price": 9.99,
+   "releaseDate": "YYYY-MM-DD"
+
 
 Response: A 204 No Content status if the update was successful or a 404 Not Found if the game does not exist.
 
