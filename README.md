@@ -102,8 +102,7 @@ Description: Delete a game by its ID.
 Response: A 204 No Content status if the deletion was successful or a 404 Not Found if the game does not exist.
 
 
-
-4. **Database Setup**
+**Database Setup**
 The application uses SQLite for data storage. To initialize the database and apply migrations, follow these steps:
 
  1.**Add Migration**
