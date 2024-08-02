@@ -83,15 +83,77 @@ Response: The created game object with a 201 Created status, including the locat
    Request Body:
       
    ```sh
-   "name": "Updated Game Name",
-   "genre": "Updated Game Genre",
-   "price": 9.99,
+   "name": "Game Name",
+   "genre": "Game Genre",
+   "price": 19.99,
    "releaseDate": "YYYY-MM-DD"
+   ```
+  
+Response: The created game object with a 201 Created status, including the location of the newly created game.
+
+**Delete a Game**
+
+URL: /games/{id}
+
+Method: DELETE
+
+Description: Delete a game by its ID.
+
+Response: A 204 No Content status if the deletion was successful or a 404 Not Found if the game does not exist.
 
 
-Response: A 204 No Content status if the update was successful or a 404 Not Found if the game does not exist.
+
+4. **Database Setup**
+The application uses SQLite for data storage. To initialize the database and apply migrations, follow these steps:
+
+ 1.**Add Migration**
+
+Run the following command to create a new migration:
+```sh
+dotnet ef migrations add InitialCreate --output-dir Data\Migrations
+```
+
+ 2.**Update Database**
+
+ Apply the migration to the database with:
+  ```sh
+dotnet ef database update
+```
+
+**Running the Application**
+To start the GameStore API:
+
+Start the Application
+
+Use the following command to run the application:
+```sh
+dotnet run
+```
+
+**Configuration**
+The application configuration is located in appsettings.json. The default SQLite database connection string is set as follows:
+```sh
+{
+  "ConnectionStrings": {
+    "GameStore": "Data Source=GameStore.db"
+  }
+}
+```
 
 
-     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               
   
