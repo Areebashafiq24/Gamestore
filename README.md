@@ -73,13 +73,13 @@ To get started with the GameStore API, follow these steps:
   
 Response: The created game object with a 201 Created status, including the location of the newly created game.
 
-**Update a Game**
-URL: /games/{id}
-Method: PUT
-Description: Update an existing game's information.
+   **Update a Game**
+   URL: /games/{id}
+   Method: PUT
+   Description: Update an existing game's information.
 
-Request Body:
-```sh
+   Request Body:
+   ```sh
    name: "Updated Game Name,
    genre: "Updated Game Genre,
    price: 9.99,
