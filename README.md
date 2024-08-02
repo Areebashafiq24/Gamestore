@@ -74,25 +74,21 @@ To get started with the GameStore API, follow these steps:
 Response: The created game object with a 201 Created status, including the location of the newly created game.
 
 **Update a Game**
-
 URL: /games/{id}
-
 Method: PUT
-
 Description: Update an existing game's information.
 
 Request Body:
 ```sh
- "name": "Updated Game Name",
- "genre": "Updated Game Genre",
- "price": 9.99,
- "releaseDate": "YYYY-MM-DD"
-
+   name: "Updated Game Name,
+   genre: "Updated Game Genre,
+   price: 9.99,
+   releaseDate: YYYY-MM-DD
 
 Response:
 A 204 No Content status if the update was successful or a 404 Not Found if the game does not exist.
 
-**Delete a Game**
+
 
 URL: /games/{id}
 Method: DELETE
