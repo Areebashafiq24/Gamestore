@@ -34,3 +34,38 @@ To get started with the GameStore API, follow these steps:
    ```sh
 
    dotnet tool install --global dotnet-ef
+
+
+3. **API ENDPOINTS**
+   **Retrieve All Games**
+   URL: /games
+   Method: GET
+   Description: Retrieve a list of all games.
+   Response: A list of game objects.
+   
+   **Retrieve Game by ID**
+   URL: /games/{id}
+   Method: GET
+   Description: Retrieve a game by its ID.
+   Response: The game object with the specified ID or a 404 Not Found if the game does not exist.
+   Create a New Game
+   URL: /games
+
+   Method: POST
+
+   Description: Add a new game to the collection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
