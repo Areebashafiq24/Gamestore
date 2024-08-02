@@ -65,12 +65,11 @@ To get started with the GameStore API, follow these steps:
    Description: Add a new game to the collection.
 
    ```sh
-    {
    "name": "Game Name",
    "genre": "Game Genre",
    "price": 19.99,
    "releaseDate": "YYYY-MM-DD"
-    }
+
   
 Response: The created game object with a 201 Created status, including the location of the newly created game.
 
