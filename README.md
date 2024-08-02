@@ -71,10 +71,11 @@ To get started with the GameStore API, follow these steps:
    "price": 19.99,
    "releaseDate": "YYYY-MM-DD"
     }
-   
-    Response: The created game object with a 201 Created status, including the location of the newly created game.
+  
+Response: The created game object with a 201 Created status, including the location of the newly created game.
 
-   Update a Game
+**Update a Game**
+
 URL: /games/{id}
 
 Method: PUT
@@ -91,7 +92,8 @@ Request Body:
 
 Response: A 204 No Content status if the update was successful or a 404 Not Found if the game does not exist.
 
-Delete a Game
+**Delete a Game**
+
 URL: /games/{id}
 Method: DELETE
 Description: Delete a game by its ID.
@@ -119,7 +121,8 @@ Start the Application
 
 Use the following command to run the application:
 ```sh
- dotnet run
+  dotnet run
+
 
 **Access the API**
 
